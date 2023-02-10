@@ -1,0 +1,52 @@
+#include <iostream>
+#include <cstdlib>
+#include <locale.h>
+
+using namespace std;
+int main ()
+{
+setlocale (LC_ALL,"");
+//ÍNDICE
+cout<<"\t\t*************\n";
+cout<<"\t\t*CALCULADORA*\n";
+cout<<"\t\t*************\n";
+cout<<"[1]Soma\n";
+cout<<"[2]Subtraçao\n";
+cout<<"[3]Divisao\n";
+cout<<"[4]Multiplicaçao\n";
+cout<<"[5]Porcentagem\n";
+//Escolha de Opção
+float A,B,resp;
+int op;
+cout<<"Informe a opção: \n";
+cin>>op;
+switch (op)
+	{
+	case 1:
+		cout<<"Digite o Primeiro Valor: \n";
+		cin>>A;
+		cout<<"Digite o segundo Valor: \n";
+		cin>>B;
+		cout<<A<<"+"<<B<<"="<<A+B<<"\n";
+		break;
+	case 2:
+		cout<<"Digite o Primeiro Valor: \n";
+		cin>>A;
+		cout<<"Digite o segundo Valor: \n";
+		cin>>B;
+		cout<<A<<"-"<<B<<"="<<A-B<<"\n";
+		break;
+	case 3:
+		cout<<"Digite o Primeiro Valor: \n";
+		cin>>A;
+		cout<<"Digite o segundo Valor: \n";
+		cin>>B;
+		cout<<A<<"/"<<B<<"="<<A/B<<"\n";
+		break;
+	case 4:
+		cout<<"Digite o Primeiro Valor: \n";
+		cin>>A;
+		cout<<"Digite o segundo Valor: \n";
+		cin>>B;
+		cout<<A<<"*"<<B<<"="<<A*B<<"\n";
+		break;
